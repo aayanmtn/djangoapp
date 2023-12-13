@@ -1,101 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>CSS Template</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>himsecops - Learning DevOps & Security</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
 
-/* Style the header */
-header {
-  background-color: #666;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: yellow;
-}
+        .animate-fadeInRight {
+            animation: fadeInRight 1s ease-out;
+        }
 
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 30%;
-  height: 300px; /* only for demonstration, should be removed */
-  background: #ccc;
-  padding: 20px;
-}
+        .retro-bg {
+            background-color: #000;
+        }
 
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
+        .retro-border {
+            border: 5px solid #fff;
+        }
 
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
-}
-
-/* Clear floats after the columns */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the footer */
-footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: yellow;
-}
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-}
-</style>
+        .retro-text {
+            color: #fff;
+            text-shadow: 2px 2px 4px #000;
+        }
+    </style>
 </head>
-<body>
 
+<body class="retro-bg font-sans">
 
-<header>
-  <h2>Free DevOps Course By Abhishek</h2>
-</header>
+    <header class="bg-gray-800 text-white text-center py-4 retro-border retro-text animate-fadeInRight">
+        <h1 class="text-3xl font-bold">Welcome to himsecops</h1>
+    </header>
 
-<section>
-  <nav>
-    <ul>
-      <li><a href="www.youtube.com/@AbhishekVeeramalla">YouTube</a></li>
-      <li><a href="www.linkedin.com/in/abhishek-veeramalla-77b33996/">LinkedIn</a></li>
-      <li><a href="https://telegram.me/abhishekveeramalla">Telegram</a></li>
-    </ul>
-  </nav>
-  
-  <article>
-    <h1>Agenda</h1>
-    <p>Learn DevOps with strong foundational knowledge and practical understanding</p>
-    <p>Please Share the Channel with your friends and colleagues</p>
-  </article>
-</section>
+    <section class="max-w-2xl mx-auto mt-8 p-4 animate-fadeInRight retro-border retro-text">
+        <h2 class="text-2xl font-bold mb-4">About Me</h2>
+        <p>
+            Greetings! I'm Aayan Mateen, diving into the depths of DevOps and security, and sharing my journey in a
+            timeless black and white style. Join me on this monochromatic adventure!
+        </p>
+    </section>
 
-<footer>
-  <p>@AbhishekVeeramalla</p>
-</footer>
+    <section class="max-w-2xl mx-auto mt-8 p-4 animate-fadeInRight retro-border retro-text">
+        <h2 class="text-2xl font-bold mb-4">Learning DevOps</h2>
+        <p>
+            Let's step back in time as I explore the principles of DevOps. From version control to CI/CD, I'll be
+            unveiling the secrets of the past and presenting them in a classic black and white palette.
+        </p>
+        <p>
+            Currently, I'm delving into the principles of DevOps, exploring tools like
+            <span class="animate-bounce text-blue-500">Docker</span>,
+            <span class="animate-bounce text-blue-500">Kubernates</span>,
+            <span class="animate-bounce text-blue-500">AWS</span>,
+            <span class="animate-bounce text-blue-500">Jenkins</span>,
+            <span class="animate-bounce text-blue-500">Ansible</span>, and more. Watch as these tools dance into the
+            future of streamlined development and operations.
+        </p>
+    </section>
+
+    <section class="max-w-2xl mx-auto mt-8 p-4 animate-fadeInRight retro-border retro-text">
+        <h2 class="text-2xl font-bold mb-4">Security Journey</h2>
+        <p>
+            In the world of cybersecurity, I'm embracing a monochrome aesthetic to learn about secure coding practices
+            and vulnerability assessments. Join me in this black and white exploration of digital security.
+        </p>
+        <p>
+            On the security front, I'm immersing myself in tools such as
+            <span class="animate-bounce text-blue-500">Wireshark</span>,
+            <span class="animate-bounce text-blue-500">Nmap</span>,
+            <span class="animate-bounce text-blue-500">Burpsuite</span>,
+            <span class="animate-bounce text-blue-500">Wazuh</span>,
+            <span class="animate-bounce text-blue-500">Nessus</span>,
+            <span class="animate-bounce text-blue-500">Metasploit</span>,
+            <span class="animate-bounce text-blue-500">Snort</span>, and others. Witness the secure dance of these tools
+            as we safeguard the digital realm.
+        </p>
+    </section>
+
+    <section class="max-w-2xl mx-auto mt-8 p-4 animate-fadeInRight retro-border retro-text">
+        <h2 class="text-2xl font-bold mb-4">Connect with Me</h2>
+        <p>
+            Reach out and let's connect in classic style! Follow me on
+            <a href="https://twitter.com/aayan__mateen" class="text-blue-500" target="_blank" rel="noopener noreferrer">Twitter</a> and
+            <a href="https://linkedin.com/in/aayan-mateen-748221189/" class="text-blue-500" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+        </p>
+    </section>
+
+    <footer class="bg-gray-800 text-white text-center py-4 mt-8 animate-fadeInRight">
+        <p>&copy; 2023 himsecops. All rights reserved.</p>
+    </footer>
 
 </body>
-</html>
 
+</html>
